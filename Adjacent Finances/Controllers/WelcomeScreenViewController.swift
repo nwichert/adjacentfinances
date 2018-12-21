@@ -45,6 +45,9 @@ class WelcomeScreenViewController: UIViewController {
     }
     
     @IBAction func signInButtonTapped(_ sender: UIButton) {
+        
+        let ref = Database.database().reference().root
+        
         // TODO: Do some form validation on username and password
         
         if let email = emailTextField.text, let pass = passwordTextField.text {
@@ -53,7 +56,7 @@ class WelcomeScreenViewController: UIViewController {
                 // Sign in user with Firebase
                 Auth.auth().signIn(withEmail: email, password: pass) { (user, error) in
                     // Check that user isn't nil
-                    if let u = user {
+                    if let u = Auth.auth().currentUser {
                         // segue user to ranks dashboard
                         self.performSegue(withIdentifier: "goToRankingsDashboard", sender: self)
                     }
@@ -68,11 +71,15 @@ class WelcomeScreenViewController: UIViewController {
                 Auth.auth().createUser(withEmail: email, password: pass) { (user, error) in
                     // check that user isn't nil
                     if let u = user {
+                        ref.child("users").child((user?.user.uid)!).setValue(email)
                         // segue user to ranks dashboard
                         self.performSegue(withIdentifier: "goToRankingsDashboard", sender: self)
                     }
                     else {
                         // error, check error and show message
+                        if error != nil {
+                            print(error!)
+                        }
                     }
                 }
             }
