@@ -271,6 +271,9 @@
                                 <state key="normal" title="Update Profile Data">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="updateTapped:" destination="Dqa-qf-3rs" eventType="touchUpInside" id="wA9-7a-tdk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4kY-1v-5sa">
                                 <rect key="frame" x="184.5" y="572" width="45" height="30"/>
@@ -296,6 +299,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wE1-rd-8J4"/>
                     </view>
+                    <connections>
+                        <outlet property="birthYearTextField" destination="9eO-TA-dZb" id="Cwn-dy-V60"/>
+                        <outlet property="savingsAmountTextField" destination="EVj-hb-hIf" id="NtY-mk-MMh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="28f-1C-LE0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

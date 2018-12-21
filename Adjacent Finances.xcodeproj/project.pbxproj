@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		39B4AB3D8EC3FD6313C9A263 /* Pods_Adjacent_Finances.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC40101391D2C459D58BAD7B /* Pods_Adjacent_Finances.framework */; };
+		4ADC057B21CD8312006810DB /* UserProfileDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADC057A21CD8312006810DB /* UserProfileDataModel.swift */; };
 		A20BD44B21CC1B5F00DE2F95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20BD44A21CC1B5F00DE2F95 /* AppDelegate.swift */; };
 		A20BD45021CC1B5F00DE2F95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A20BD44E21CC1B5F00DE2F95 /* Main.storyboard */; };
 		A20BD45221CC1B6200DE2F95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20BD45121CC1B6200DE2F95 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		4AD1C403C42118AAB18940E7 /* Pods-Adjacent Finances.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Adjacent Finances.release.xcconfig"; path = "Pods/Target Support Files/Pods-Adjacent Finances/Pods-Adjacent Finances.release.xcconfig"; sourceTree = "<group>"; };
+		4ADC057A21CD8312006810DB /* UserProfileDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileDataModel.swift; sourceTree = "<group>"; };
 		A20BD44721CC1B5F00DE2F95 /* Adjacent Finances.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Adjacent Finances.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A20BD44A21CC1B5F00DE2F95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A20BD44F21CC1B5F00DE2F95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -55,6 +57,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		4ADC057721CD7F37006810DB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4ADC057A21CD8312006810DB /* UserProfileDataModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		5230875AB4BC2EE8A325ABDC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -84,7 +94,7 @@
 		A20BD44921CC1B5F00DE2F95 /* Adjacent Finances */ = {
 			isa = PBXGroup;
 			children = (
-				A20BD46021CC1C7D00DE2F95 /* Models */,
+				4ADC057721CD7F37006810DB /* Models */,
 				A20BD45F21CC1C7500DE2F95 /* Views */,
 				A20BD45E21CC1C6400DE2F95 /* Controllers */,
 				A20BD45121CC1B6200DE2F95 /* Assets.xcassets */,
@@ -112,13 +122,6 @@
 				A20BD44E21CC1B5F00DE2F95 /* Main.storyboard */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		A20BD46021CC1C7D00DE2F95 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +266,7 @@
 				A20BD44B21CC1B5F00DE2F95 /* AppDelegate.swift in Sources */,
 				A2F42A8321CC374300978D54 /* UserProfileViewController.swift in Sources */,
 				A20BD46221CC261800DE2F95 /* RetirementRankingsDashboardViewController.swift in Sources */,
+				4ADC057B21CD8312006810DB /* UserProfileDataModel.swift in Sources */,
 				A2F42A8121CC2D7200978D54 /* WelcomeScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
