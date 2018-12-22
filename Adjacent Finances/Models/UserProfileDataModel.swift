@@ -10,6 +10,6 @@ import Foundation
 import Firebase
 
 struct user {
-    let savingsAmount: Int
+    let savingsAmount: Double
     let birthYear: Int
 }

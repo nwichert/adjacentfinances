@@ -72,7 +72,7 @@ class WelcomeScreenViewController: UIViewController {
                     if let u = user {
                         ref.child("users").child((user?.user.uid)!).setValue(email)
                         // segue user to ranks dashboard
-                        self.performSegue(withIdentifier: "goToRankingsDashboard", sender: self)
+                        self.performSegue(withIdentifier: "updateDataUponRegistering", sender: self)
                     }
                     else {
                         // error, check error and show message

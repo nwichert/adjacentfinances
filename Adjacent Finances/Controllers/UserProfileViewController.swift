@@ -15,20 +15,26 @@ class UserProfileViewController: UIViewController {
     @IBOutlet weak var birthYearTextField: UITextField!
     @IBOutlet weak var savingsAmountTextField: UITextField!
     
-    
-    var dbRef: DatabaseReference?
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        dbRef = Database.database().reference()
         
     }
     
     
     
     @IBAction func updateTapped(_ sender: Any) {
+        Firestore.firestore().collection("users").addDocument(data: [
+            "savingsAmount" : savingsAmountTextField.text!,
+            "birthYear" : birthYearTextField.text!,
+            "timeStamp" : FieldValue.serverTimestamp()
+        ]) { (err) in
+            if let err = err {
+                debugPrint("Error adding document: \(err)")
+            } else {
+                self.performSegue(withIdentifier: "updateDataUponReturning", sender: self)
+            }
+        }
     }
     
 

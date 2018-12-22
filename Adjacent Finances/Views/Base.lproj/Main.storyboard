@@ -126,6 +126,7 @@
                         <outlet property="signInLabel" destination="rJ5-yP-JYa" id="WgE-QQ-u91"/>
                         <outlet property="signInSelector" destination="lmS-E7-Hfd" id="E9X-5M-y56"/>
                         <segue destination="QUv-nL-G2t" kind="show" identifier="goToRankingsDashboard" id="vsQ-Cr-FC1"/>
+                        <segue destination="Dqa-qf-3rs" kind="show" identifier="updateDataUponRegistering" id="4CG-1b-sHW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cXH-Xf-Upi" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -182,9 +183,6 @@
                                 <rect key="frame" x="336" y="76" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="edit"/>
-                                <connections>
-                                    <segue destination="Dqa-qf-3rs" kind="show" id="43a-8k-TSi"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.3436678946018219" green="0.7268097996711731" blue="0.61567550897598267" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -203,7 +201,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yCy-au-IYK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="168.11594202898553" y="67.633928571428569"/>
+            <point key="canvasLocation" x="423" y="472"/>
         </scene>
         <!--User Profile View Controller-->
         <scene sceneID="9C7-T8-2Se">
@@ -302,14 +300,18 @@
                     <connections>
                         <outlet property="birthYearTextField" destination="9eO-TA-dZb" id="Cwn-dy-V60"/>
                         <outlet property="savingsAmountTextField" destination="EVj-hb-hIf" id="NtY-mk-MMh"/>
+                        <segue destination="QUv-nL-G2t" kind="show" identifier="updateDataUponReturning" id="mI8-fU-7BM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="28f-1C-LE0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1027.536231884058" y="67.633928571428569"/>
+            <point key="canvasLocation" x="1165" y="-249"/>
         </scene>
     </scenes>
     <resources>
         <image name="af-logo" width="369" height="475"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="mI8-fU-7BM"/>
+    </inferredMetricsTieBreakers>
 </document>
