@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		39B4AB3D8EC3FD6313C9A263 /* Pods_Adjacent_Finances.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC40101391D2C459D58BAD7B /* Pods_Adjacent_Finances.framework */; };
+		4A415ED321CFE9390065D22F /* UpdateEditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A415ED221CFE9390065D22F /* UpdateEditProfileViewController.swift */; };
 		4ADC057B21CD8312006810DB /* UserProfileDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADC057A21CD8312006810DB /* UserProfileDataModel.swift */; };
 		A20BD44B21CC1B5F00DE2F95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20BD44A21CC1B5F00DE2F95 /* AppDelegate.swift */; };
 		A20BD45021CC1B5F00DE2F95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A20BD44E21CC1B5F00DE2F95 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A415ED221CFE9390065D22F /* UpdateEditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateEditProfileViewController.swift; sourceTree = "<group>"; };
 		4AD1C403C42118AAB18940E7 /* Pods-Adjacent Finances.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Adjacent Finances.release.xcconfig"; path = "Pods/Target Support Files/Pods-Adjacent Finances/Pods-Adjacent Finances.release.xcconfig"; sourceTree = "<group>"; };
 		4ADC057A21CD8312006810DB /* UserProfileDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileDataModel.swift; sourceTree = "<group>"; };
 		A20BD44721CC1B5F00DE2F95 /* Adjacent Finances.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Adjacent Finances.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,6 +114,7 @@
 				A20BD46121CC261800DE2F95 /* RetirementRankingsDashboardViewController.swift */,
 				A2F42A8221CC374300978D54 /* UserProfileViewController.swift */,
 				A2F42A8021CC2D7200978D54 /* WelcomeScreenViewController.swift */,
+				4A415ED221CFE9390065D22F /* UpdateEditProfileViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				A20BD46221CC261800DE2F95 /* RetirementRankingsDashboardViewController.swift in Sources */,
 				4ADC057B21CD8312006810DB /* UserProfileDataModel.swift in Sources */,
 				A2F42A8121CC2D7200978D54 /* WelcomeScreenViewController.swift in Sources */,
+				4A415ED321CFE9390065D22F /* UpdateEditProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

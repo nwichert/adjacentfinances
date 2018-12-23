@@ -9,7 +9,18 @@
 import Foundation
 import Firebase
 
-struct user {
-    let savingsAmount: Double
-    let birthYear: Int
+class User {
+    
+    private(set) var savingsAmount: Double!
+    private(set) var birthYear: Int!
+    private(set) var timestamp: Timestamp!
+    private(set) var documentId: String!
+    
+    init(savingsAmount: Double, birthYear: Int, timestamp: Timestamp, documentId: String) {
+        self.savingsAmount = savingsAmount
+        self.birthYear = birthYear
+        self.timestamp = timestamp
+        self.documentId = documentId
+    }
+    
 }
