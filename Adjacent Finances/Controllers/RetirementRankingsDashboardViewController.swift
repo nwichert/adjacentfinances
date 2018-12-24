@@ -18,5 +18,12 @@ class RetirementRankingsDashboardViewController: UIViewController {
     
 
     
-
+    @IBAction func editProfileBtnTapped(_ sender: UIButton) {
+        performSegue(withIdentifier: "editUpdateUserProfileSegue", sender: self)
+    }
+    
+    
+    @IBAction func refreshDataBtnTapped(_ sender: UIButton) {
+    }
+    
 }
