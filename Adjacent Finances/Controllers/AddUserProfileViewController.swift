@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class UserProfileViewController: UIViewController {
+class AddUserProfileViewController: UIViewController {
     
     
     @IBOutlet weak var birthYearTextField: UITextField!
