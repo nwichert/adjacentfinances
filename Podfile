@@ -7,6 +7,7 @@ target 'Adjacent Finances' do
   # Pods for Adjacent Finances
 
   pod 'Firebase'
+  pod 'Firebase/Core'
   pod 'Firebase/Firestore'
   pod 'Firebase/Auth'
   pod 'Firebase/Database'

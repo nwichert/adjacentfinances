@@ -9,14 +9,14 @@
 import Foundation
 import Firebase
 
-class User {
+class ProfileData {
     
-    private(set) var savingsAmount: Double!
+    private(set) var savingsAmount: Int!
     private(set) var birthYear: Int!
     private(set) var timestamp: Timestamp!
     private(set) var documentId: String!
     
-    init(savingsAmount: Double, birthYear: Int, timestamp: Timestamp, documentId: String) {
+    init(savingsAmount: Int, birthYear: Int, timestamp: Timestamp, documentId: String) {
         self.savingsAmount = savingsAmount
         self.birthYear = birthYear
         self.timestamp = timestamp

@@ -24,15 +24,14 @@ class AddUserProfileViewController: UIViewController {
     
     
     @IBAction func updateTapped(_ sender: Any) {
-        Firestore.firestore().collection("users").addDocument(data: [
+        Firestore.firestore().collection("profileData").addDocument(data: [
             "savingsAmount" : savingsAmountTextField.text!,
-            "birthYear" : birthYearTextField.text!,
             "timeStamp" : FieldValue.serverTimestamp()
         ]) { (err) in
             if let err = err {
                 debugPrint("Error adding document: \(err)")
             } else {
-                self.performSegue(withIdentifier: "updateDataUponReturning", sender: self)
+                self.performSegue(withIdentifier: "RetirementRankingsDashboardViewController", sender: self)
             }
         }
     }

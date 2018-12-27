@@ -137,6 +137,7 @@ DEPENDENCIES:
   - FacebookLogin
   - Firebase
   - Firebase/Auth
+  - Firebase/Core
   - Firebase/Database
   - Firebase/Firestore
 
@@ -191,6 +192,6 @@ SPEC CHECKSUMS:
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   Protobuf: 1eb9700044745f00181c136ef21b8ff3ad5a0fd5
 
-PODFILE CHECKSUM: dca4865af7e04173483319a700f9a7bcef26cdf9
+PODFILE CHECKSUM: 218469b6dbe609b5056d97dd0592dbb5e25c281a
 
 COCOAPODS: 1.5.3

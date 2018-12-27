@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		39B4AB3D8EC3FD6313C9A263 /* Pods_Adjacent_Finances.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC40101391D2C459D58BAD7B /* Pods_Adjacent_Finances.framework */; };
+		4A40DDFC21D492F400EEDF5B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A40DDFB21D492F400EEDF5B /* LoginVC.swift */; };
+		4A40DDFE21D4930D00EEDF5B /* CreateUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A40DDFD21D4930D00EEDF5B /* CreateUserVC.swift */; };
 		4A415ED321CFE9390065D22F /* UpdateEditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A415ED221CFE9390065D22F /* UpdateEditProfileViewController.swift */; };
 		4ADC057B21CD8312006810DB /* UserProfileDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADC057A21CD8312006810DB /* UserProfileDataModel.swift */; };
 		A20BD44B21CC1B5F00DE2F95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20BD44A21CC1B5F00DE2F95 /* AppDelegate.swift */; };
@@ -16,11 +18,12 @@
 		A20BD45521CC1B6200DE2F95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A20BD45321CC1B6200DE2F95 /* LaunchScreen.storyboard */; };
 		A20BD45D21CC1BA300DE2F95 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A20BD45C21CC1BA200DE2F95 /* GoogleService-Info.plist */; };
 		A20BD46221CC261800DE2F95 /* RetirementRankingsDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20BD46121CC261800DE2F95 /* RetirementRankingsDashboardViewController.swift */; };
-		A2F42A8121CC2D7200978D54 /* WelcomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F42A8021CC2D7200978D54 /* WelcomeScreenViewController.swift */; };
-		A2F42A8321CC374300978D54 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F42A8221CC374300978D54 /* UserProfileViewController.swift */; };
+		A2F42A8321CC374300978D54 /* AddUserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F42A8221CC374300978D54 /* AddUserProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A40DDFB21D492F400EEDF5B /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		4A40DDFD21D4930D00EEDF5B /* CreateUserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserVC.swift; sourceTree = "<group>"; };
 		4A415ED221CFE9390065D22F /* UpdateEditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateEditProfileViewController.swift; sourceTree = "<group>"; };
 		4AD1C403C42118AAB18940E7 /* Pods-Adjacent Finances.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Adjacent Finances.release.xcconfig"; path = "Pods/Target Support Files/Pods-Adjacent Finances/Pods-Adjacent Finances.release.xcconfig"; sourceTree = "<group>"; };
 		4ADC057A21CD8312006810DB /* UserProfileDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileDataModel.swift; sourceTree = "<group>"; };
@@ -32,8 +35,7 @@
 		A20BD45621CC1B6200DE2F95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A20BD45C21CC1BA200DE2F95 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A20BD46121CC261800DE2F95 /* RetirementRankingsDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetirementRankingsDashboardViewController.swift; sourceTree = "<group>"; };
-		A2F42A8021CC2D7200978D54 /* WelcomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WelcomeScreenViewController.swift; path = "Adjacent Finances/Controllers/WelcomeScreenViewController.swift"; sourceTree = SOURCE_ROOT; };
-		A2F42A8221CC374300978D54 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		A2F42A8221CC374300978D54 /* AddUserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserProfileViewController.swift; sourceTree = "<group>"; };
 		B64C55F6900A5AF8E4D44F2A /* Pods-Adjacent Finances.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Adjacent Finances.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Adjacent Finances/Pods-Adjacent Finances.debug.xcconfig"; sourceTree = "<group>"; };
 		DC40101391D2C459D58BAD7B /* Pods_Adjacent_Finances.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Adjacent_Finances.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -112,9 +114,10 @@
 			children = (
 				A20BD44A21CC1B5F00DE2F95 /* AppDelegate.swift */,
 				A20BD46121CC261800DE2F95 /* RetirementRankingsDashboardViewController.swift */,
-				A2F42A8221CC374300978D54 /* UserProfileViewController.swift */,
-				A2F42A8021CC2D7200978D54 /* WelcomeScreenViewController.swift */,
+				A2F42A8221CC374300978D54 /* AddUserProfileViewController.swift */,
 				4A415ED221CFE9390065D22F /* UpdateEditProfileViewController.swift */,
+				4A40DDFB21D492F400EEDF5B /* LoginVC.swift */,
+				4A40DDFD21D4930D00EEDF5B /* CreateUserVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -298,10 +301,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A20BD44B21CC1B5F00DE2F95 /* AppDelegate.swift in Sources */,
-				A2F42A8321CC374300978D54 /* UserProfileViewController.swift in Sources */,
+				4A40DDFE21D4930D00EEDF5B /* CreateUserVC.swift in Sources */,
+				A2F42A8321CC374300978D54 /* AddUserProfileViewController.swift in Sources */,
+				4A40DDFC21D492F400EEDF5B /* LoginVC.swift in Sources */,
 				A20BD46221CC261800DE2F95 /* RetirementRankingsDashboardViewController.swift in Sources */,
 				4ADC057B21CD8312006810DB /* UserProfileDataModel.swift in Sources */,
-				A2F42A8121CC2D7200978D54 /* WelcomeScreenViewController.swift in Sources */,
 				4A415ED321CFE9390065D22F /* UpdateEditProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
